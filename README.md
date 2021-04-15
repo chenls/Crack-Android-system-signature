@@ -2,7 +2,7 @@
 
 ## 前言
 
-本文提到的相关工具和脚本同步在此：[git@github.com:chenls/Crack-Android-system-signature.git](git@github.com:chenls/Crack-Android-system-signature.git)，可以在linux中使用的一站式脚本：[run.sh](https://github.com/chenls/Crack-Android-system-signature/blob/main/run.sh)。
+本文提到的相关工具和脚本同步在此：[https://github.com/chenls/Crack-Android-system-signature](https://github.com/chenls/Crack-Android-system-signature)，可以在linux中使用的一站式脚本：[run.sh](https://github.com/chenls/Crack-Android-system-signature/blob/main/run.sh)。
 
 在需要使用一些系统层面的API时（如：HIDL服务），我们APK中必须在应用程序的`AndroidManifest.xml`中的`manifest`节点中加入`android:sharedUserId="android.uid.system"`属性，在添加此属性后，往往需要使用Android源码编译或者使用对应的签名文件对APK签名，才能正常安装。
 
