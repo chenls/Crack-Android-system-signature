@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dir=$(dirname $(readlink -f "$0"))
+cd $dir
 echo "pull /system/framework/services.jar"
 adb pull /system/framework/services.jar
 echo "backup services.jar to services_bak.jar"
@@ -56,3 +58,4 @@ adb wait-for-device root
 adb remount
 adb push services.jar /system/framework/services.jar
 adb reboot
+cd -
